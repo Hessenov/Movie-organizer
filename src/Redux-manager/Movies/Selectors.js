@@ -1,0 +1,1 @@
+export const getMoviesResult = (state) => state.movieReducer.cartMovies.Search

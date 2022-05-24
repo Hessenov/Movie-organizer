@@ -17,7 +17,7 @@ function SearchBox() {
   };
 
   const searchLineMovies = () =>{
-    dispatch(actionSearchMovie(setSearchLine));
+    dispatch(actionSearchMovie(searchLine));
 };
 
   return (

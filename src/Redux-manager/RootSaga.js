@@ -4,3 +4,4 @@ import movieSaga from "./Movies/Saga"
 function* rootSaga(){
     yield all([call(movieSaga)])
 }
+export default rootSaga

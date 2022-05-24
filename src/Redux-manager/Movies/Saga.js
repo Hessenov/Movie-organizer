@@ -4,7 +4,7 @@ import { actionSearchMovie } from "./Actions";
 import { fetchMovies } from "../REST";
 
 export default function* watcherCart(){
-    yield takeEvery(FIND_MOVIES)
+    yield takeEvery(FIND_MOVIES,workerCart)
 }
 
 function* workerCart(action) {

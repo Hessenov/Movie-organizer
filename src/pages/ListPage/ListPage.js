@@ -7,17 +7,11 @@ function ListPage(props) {
     { title: "The Godfather", year: 1972, imdbID: "tt0068646" },
   ]);
 
-  // state = {
-  //     movies: [
-  //         { title: 'The Godfather', year: 1972, imdbID: 'tt0068646' }
-  //     ]
-  // }
 const {id} = useParams()
   useEffect(() => {
     
     console.log(id);
-    // TODO: запрос к сервер на получение списка
-    // TODO: запросы к серверу по всем imdbID
+ 
   });
   return (
     <div className="list-page">

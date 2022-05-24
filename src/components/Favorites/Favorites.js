@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Favorites.css";
-import {useSelector} from "react-redux"
+import { useSelector } from "react-redux";
 
 function Favorites() {
   const [title, SetTitle] = useState("");
@@ -9,13 +9,18 @@ function Favorites() {
     { imdbID: "tt0068646", title: "The Godfather", year: 1972 },
   ]);
 
-  const ChangeText = (e) =>{
-    SetTitle(e.target.value)
-  }
+  const ChangeText = (e) => {
+    SetTitle(e.target.value);
+  };
 
   return (
     <div className="favorites">
-      <input value={title} onChange={ChangeText} placeholder="Новый список" className="favorites__name" />
+      <input
+        value={title}
+        onChange={ChangeText}
+        placeholder="Новый список"
+        className="favorites__name"
+      />
       <ul className="favorites__list">
         {movies.map((item) => {
           return (
